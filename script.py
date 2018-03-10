@@ -14,3 +14,11 @@ for i in range(5):
 # Print three randomly-generated sentences of no more than 140 characters
 for i in range(3):
     print(text_model.make_short_sentence(140))
+
+# Generate a setence and find out by the user if they want to tweet it.
+print(text_model.make_short_sentence(140))
+print('Would you like to tweet this?')
+postTweet = input()
+if postTweet.lower() in ['y', 'yes', 'true']:
+    print('cool')
+    #TODO: Do twitter implementation here
